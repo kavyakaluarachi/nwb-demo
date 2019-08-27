@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageAdmin">
+
+
+    <ImageView
+        android:id="@+id/menuButton8"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:onClick="showPopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignParentRight="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menubar2" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reviewReportsButton"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center_horizontal"
+        android:text="Welcome, Perry!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reviewReportsButton"
+        android:layout_width="236dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="#2D368E"
+        android:onClick="reviewReports"
+        android:text="Review Reports"
+        android:textColor="#FAF7F7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="139dp"
+        android:layout_height="118dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/unnamed" />
+
+
+</RelativeLayout>

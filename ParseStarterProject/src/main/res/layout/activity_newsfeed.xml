@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Newsfeed">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/newbanner"
+            android:text="NWB NEWS"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/menuButton5"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="2dp"
+        android:onClick="showPopup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menubar2" />
+
+    <ImageView
+        android:id="@+id/backHomeButton5"
+        android:layout_width="94dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF2D368E"
+                android:text="school bus mounted cameras admissible as evidence"
+                android:textColor="#F9F5F5"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/contactImageView"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:onClick="onArticleClick"
+                android:scrollbarTrackVertical="@drawable/schoolarticle1"
+                app:srcCompat="@drawable/schoolarticle1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF2D368E"
+                android:text="halton police smash organized gta break and enter"
+                android:textColor="#F9F5F5"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/haltonCrimeImage"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:onClick="onArticleClick"
+                android:scrollbarTrackVertical="@drawable/haltonarticle1"
+                app:srcCompat="@drawable/haltonarticle1" />
+
+            <Space
+                android:id="@+id/space2"
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF2D368E"
+                android:text="canada's remarkable generosity in memory of Riya"
+                android:textColor="#F9F5F5"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/riyaImage"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:onClick="onArticleClick"
+                android:scrollbarTrackVertical="@drawable/riyaarticle1"
+                app:srcCompat="@drawable/riyaarticle1" />
+
+            <Space
+                android:id="@+id/space3"
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

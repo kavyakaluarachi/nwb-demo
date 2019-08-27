@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ContactPageEmail">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/newbanner"
+        android:text="Contact Us"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:padding="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_text_to"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailSubject" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:layout_gravity="center"
+        android:padding="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|top"
+        android:lines="10" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="375dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:background="@drawable/newbanner"
+
+        android:text="send"
+        android:textColor="#F6F2F2" />
+
+</LinearLayout>

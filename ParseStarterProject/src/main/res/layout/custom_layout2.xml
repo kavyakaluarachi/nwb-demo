@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/reportPhoto"
+        android:layout_width="315dp"
+        android:layout_height="145dp"
+        android:layout_weight="66.6"
+        tools:srcCompat="@tools:sample/avatars[15]" />
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="33.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reportTypeTV"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:gravity="left"
+            android:text="TextView2"
+            android:textColor="#2D368F"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/dateInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#213BC2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/addressInfo"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="TextView"
+            android:textColor="#3C3D41"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/submittedTV"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/reportTypeTV"
+            android:gravity="left"
+            android:text="TextView3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

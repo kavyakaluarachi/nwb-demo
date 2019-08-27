@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28378914933",
+    "firebase_url": "https://nwbpushnotifications.firebaseio.com",
+    "project_id": "nwbpushnotifications",
+    "storage_bucket": "nwbpushnotifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28378914933:android:496897f7b68def35",
+        "android_client_info": {
+          "package_name": "com.parse.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28378914933-jgedicl187hqaojlt2kbt0vlshf64l79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFOnWLMEa45KjiSwYA5FciahBMaULN_x0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28378914933-jgedicl187hqaojlt2kbt0vlshf64l79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

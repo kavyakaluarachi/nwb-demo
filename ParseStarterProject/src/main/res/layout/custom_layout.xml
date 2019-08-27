@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <TextView
+        android:id="@+id/statusTV"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_weight="66.6"
+        android:gravity="center"
+        android:text="TextView1"
+        android:textAlignment="center"
+        android:textColor="#131011" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_weight="33.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reportTypeTV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="TextView2"
+            android:textColor="#2374D2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/submittedTV"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_below="@+id/reportTypeTV"
+            android:gravity="center"
+            android:text="TextView3" />
+    </LinearLayout>
+
+</LinearLayout>
